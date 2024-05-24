@@ -1,0 +1,40 @@
+getgenv().Config = {
+    Holdok = false
+}
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local Window = Library:NewWindow("???")
+
+local MainSection = Window:NewSection("Main")
+MainSection:CreateToggle("Auto Tp", function(state)
+    task.spawn(function()
+        Config.Click = state
+        while true do
+            if not Config.Click then return end
+local humanoid = game.Players.LocalPlayer.Character.HumanoidRootPart
+
+getgenv().ban = true 
+getgenv().AutoJump = true 
+
+while AutoJump do
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end
+while ban do
+  humanoid.CFrame = CFrame.new(-140, 288, 330)
+  wait(2)
+  humanoid.CFrame = CFrame.new(-164, 303, 197)
+  wait(2)
+  humanoid.CFrame = CFrame.new(-209, 309, 105)
+  wait(2)
+  humanoid.CFrame = CFrame.new(-108, 343, 105)
+  wait(2)
+  humanoid.CFrame = CFrame.new(-110, 343, 23)
+  wait(2)
+  humanoid.CFrame = CFrame.new(-16, 343, 23)
+  wait(2)
+  humanoid.CFrame = CFrame.new(107, 343, 99)
+wait(50)
+end
+        end
+    end)
+end)
